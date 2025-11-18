@@ -1,0 +1,160 @@
+/* --- Toàn bộ trang --- */
+body {
+  font-family: Arial, sans-serif;        /* font chữ chính */
+  background-color: #fff;                /* nền trắng */
+  display: flex;                         /* dùng flexbox để canh giữa */
+  justify-content: center;               /* canh giữa theo chiều ngang */
+  align-items: flex-start;               /* canh phần tử ở đầu trên */
+  min-height: 100vh;                     /* chiều cao tối thiểu bằng chiều cao màn hình */
+  margin: 0;                             /* bỏ khoảng cách mặc định của body */
+  padding: 40px 20px;                    /* tạo khoảng trống xung quanh */
+}
+
+/* --- Khung form chính --- */
+.form-section {
+  width: 100%;                           /* chiếm toàn chiều ngang có thể */
+  max-width: 420px;                      /* giới hạn tối đa 420px */
+  background: #fff;                      /* nền trắng */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* tạo bóng mờ nhẹ cho form */
+  border-radius: 10px;                   /* bo tròn góc khung */
+  padding: 30px;                         /* khoảng trống bên trong form */
+}
+
+/* --- Tiêu đề form --- */
+header {
+  text-align: center;                    /* căn giữa nội dung tiêu đề */
+  margin-bottom: 25px;                   /* tạo khoảng cách dưới tiêu đề */
+}
+
+header h2 {
+  color: #00b14f;                        /* màu xanh chủ đạo của TopCV */
+  font-size: 22px;                       /* cỡ chữ tiêu đề */
+  margin: 0;                             /* bỏ khoảng cách mặc định */
+}
+
+header p {
+  color: #555;                           /* màu chữ xám nhạt */
+  font-size: 14px;                       /* chữ nhỏ hơn cho mô tả */
+  margin-top: 8px;                       /* cách tiêu đề 1 chút */
+}
+
+/* --- Nhóm input (icon + ô nhập) --- */
+.input-group {
+  position: relative;                    /* để icon nằm trong cùng khung */
+  margin-bottom: 15px;                   /* cách nhau giữa các ô */
+}
+
+.input-group i {
+  position: absolute;                    /* đặt icon trong ô nhập */
+  top: 50%;                              /* giữa chiều cao ô */
+  left: 12px;                            /* cách lề trái */
+  transform: translateY(-50%);           /* dịch icon lên giữa chính xác */
+  color: #00b14f;                        /* icon màu xanh */
+  font-size: 16px;                       /* kích thước icon */
+}
+
+.input-group .eye {
+  right: 12px;                           /* icon con mắt bên phải */
+  left: auto;                            /* bỏ canh trái */
+  cursor: pointer;                       /* hiển thị con trỏ bàn tay khi rê chuột */
+  color: #888;                           /* màu xám nhạt cho icon con mắt */
+}
+
+.input-group input {
+  width: 100%;                           /* ô nhập chiếm toàn khung */
+  padding: 10px 40px;                    /* chừa khoảng cho icon trái + phải */
+  border: 1px solid #ccc;                /* viền xám nhạt */
+  border-radius: 6px;                    /* bo tròn nhẹ góc ô nhập */
+  font-size: 14px;                       /* cỡ chữ trong ô nhập */
+  box-sizing: border-box;                /* tính cả padding vào kích thước tổng */
+}
+
+.input-group input:focus {
+  border-color: #00b14f;                 /* khi click vào đổi viền thành xanh */
+  outline: none;                         /* bỏ viền mặc định của trình duyệt */
+}
+
+/* --- Checkbox điều khoản --- */
+.checkbox 
+{
+  color: #555;                           /* màu xám chữ */
+}
+.checkbox a 
+{
+  color: #00b14f;                        /* màu xanh cho link */
+  text-decoration: none;                 /* bỏ gạch chân */
+}
+
+/* --- Nút đăng ký --- */
+.btn-register 
+{
+  width: 100%;                           /* chiếm toàn chiều rộng form */
+  background-color: #00b14f;             /* màu xanh chủ đạo */
+  color: #fff;                           /* chữ trắng */
+  padding: 12px;                         /* độ cao nút */
+  border: none;                          /* bỏ viền mặc định */
+  border-radius: 6px;                    /* bo góc */
+  font-size: 16px;                       /* cỡ chữ */
+  cursor: pointer;                       /* đổi con trỏ khi rê vào */
+}
+
+/* --- Khu vực đăng nhập mạng xã hội --- */
+.social-login 
+{
+  text-align: center;                    /* căn giữa nội dung */
+  margin-top: 2px;                      /* cách nút Đăng ký */
+}
+.social-login p 
+{
+  color: #555;                           /* màu chữ xám */
+  font-size: 14px;                       /* cỡ chữ vừa phải */
+  margin-bottom: 10px;                   /* cách nút mạng xã hội */
+}
+
+/* --- Các nút mạng xã hội --- */
+.social-buttons 
+{
+  display: flex;                         /* sắp xếp nút theo hàng ngang */
+  justify-content: space-between;        /* giãn cách đều giữa các nút */
+  gap: 8px;                              /* tạo khoảng cách giữa các nút */
+}
+.social-buttons button 
+{
+  flex: 1;                               /* mỗi nút chiếm đều chiều ngang */
+  border: none;                          /* bỏ viền */
+  color: #fff;                           /* chữ trắng */
+  padding: 10px;                         /* chiều cao nút */
+  border-radius: 5px;                    /* bo tròn góc */
+  font-size: 14px;                       /* chữ vừa phải */
+  cursor: pointer;                       /* con trỏ bàn tay */
+  display: flex;                         /* để căn icon với chữ */
+  align-items: center;                   /* căn giữa icon và chữ theo dọc */
+  justify-content: center;               /* căn giữa theo ngang */
+  gap: 6px;                              /* khoảng giữa icon và chữ */
+}
+
+.google 
+{
+  background-color: #ea4335;             /* đỏ Google */
+}
+.facebook 
+{
+  background-color: #1877f2;             /* xanh Facebook */
+}
+.linkedin 
+{
+  background-color: #0a66c2;             /* xanh LinkedIn */
+}
+
+/* --- Dòng “Bạn đã có tài khoản?” --- */
+.login-text {
+  text-align: center;                    /* căn giữa chữ */
+  font-size: 14px;                       /* cỡ chữ nhỏ */
+  margin-top: 20px;                      /* cách phía trên */
+  color: #555;                           /* màu xám chữ */
+}
+.login-text a 
+{
+  color: #00b14f;                        /* màu xanh cho link */
+  text-decoration: none;                 /* bỏ gạch chân */
+}

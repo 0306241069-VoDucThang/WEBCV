@@ -1,0 +1,129 @@
+body{
+    width: 90%;
+    margin: auto;
+}
+.header {
+    
+    background-color: #451DA0;
+    padding: 18px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    gap: 45px;
+    font-size: 15px;
+}
+
+.menu li {
+    cursor: pointer;
+}
+
+.tai-khoan {
+    text-align: right;
+    font-size: 15px;
+    line-height: 18px;
+}
+.tai-khoan a{
+    color: aliceblue;
+    text-decoration: none;
+}
+.phan-giua {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    padding: 40px 0;
+}
+
+.anh-tieu-de img {
+    width: 350px;
+}
+
+.anh-tieu-de h2 {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.uuthe {
+    width: 80%;
+    margin: 40px auto;
+}
+
+.dong1, .dong2 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.item {
+    width: 45%;
+    text-align: left;
+}
+
+.icon {
+    font-size: 35px;
+    color: #1a73e8;
+    margin-bottom: 10px;
+}
+
+.item h3 {
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+.item p {
+    font-size: 14px;
+}
+
+.nut-dangtin {
+    background-color: #451DA0;
+    color: white;
+    padding: 12px 35px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.hotline {
+    margin-top: 25px;
+    font-size: 14px;
+}
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    border-top: 1px solid white;
+    font-family: Arial, sans-serif;
+    
+}
+
+.footer h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+.footer p {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+.icon i {
+    font-size: 22px;
+    margin-right: 15px;
+}
+hr{
+    background-color: #451DA0;
+    height: 1px;
+}

@@ -1,0 +1,66 @@
+.container{
+    padding-top: 70px;
+    padding-left: 350px;
+}
+.container-main {
+display: grid;
+grid-template-columns: 180px 1fr 200px;
+gap: 20px;
+padding: 20px;
+}
+
+
+.menu-ben-trai {
+display: flex;
+flex-direction: column;
+gap: 50px;
+}
+
+
+.nut-menu {
+background: #d9d9d9;
+padding: 15px;
+border: 1px solid #999;
+text-align: center;
+font-size: 15px;
+border-radius: 5px;
+cursor: pointer;
+}
+
+.noi-dung {
+display: flex;
+gap: 30px;
+padding-left: 40px;
+}
+
+
+.o-thongtin {
+background: #4c2fa8;
+color: white;
+padding: 20px;
+width: 220px;   
+text-align: center;
+border-radius: 5px;
+font-size: 15px;
+}
+
+.o-thongtin span {
+font-size: 20px;
+font-weight: bold;
+}
+
+.hinh-nhanvat {
+width: 400px;
+display: flex;
+margin-right: 20%;
+}
+
+.bentrai{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.header-anh img{
+    width: 900px;
+    height: 300px;
+}

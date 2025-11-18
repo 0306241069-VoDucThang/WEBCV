@@ -1,0 +1,114 @@
+/* --- Thiết lập chung toàn trang --- */
+body 
+{
+  font-family: Arial, sans-serif;        /* chọn font chữ */
+  background-color: #fff;                /* nền trắng */
+  display: flex;                         /* dùng flexbox để căn giữa */
+  justify-content: center;               /* canh giữa theo chiều ngang */
+  align-items: flex-start;               /* canh phần tử ở đầu trên */
+  min-height: 100vh;                     /* chiều cao tối thiểu bằng chiều cao màn hình */
+  margin: 0;                             /* bỏ khoảng cách mặc định */
+  padding: 40px 20px;                    /* thêm khoảng trống xung quanh */
+}
+
+/* --- Tiêu đề và mô tả --- */
+header {
+  text-align: center;                    /* căn giữa nội dung */
+  margin-bottom: 25px;                   /* cách phần dưới */
+}
+
+header h2 {
+  color: #00b14f;                        /* màu xanh chủ đạo */
+  font-size: 22px;                       /* cỡ chữ tiêu đề */
+}
+
+header p {
+  color: #555;                           /* màu xám nhạt */
+  font-size: 14px;                       /* cỡ chữ nhỏ hơn */
+  margin-top: 8px;                       /* cách phần tiêu đề */
+}
+
+/* --- Nút đăng nhập bằng Google --- */
+.btn-google {
+  width: 100%;                           /* chiếm toàn chiều ngang */
+  background-color: #1877f2;             /* xanh Google (hoặc Facebook style) */
+  color: #fff;                           /* chữ trắng */
+  padding: 12px;                         /* chiều cao nút */
+  border: none;                          /* bỏ viền */
+  border-radius: 6px;                    /* bo tròn góc */
+  font-size: 15px;                       /* cỡ chữ vừa */
+  cursor: pointer;                       /* con trỏ bàn tay */
+  display: flex;                         /* để icon và chữ nằm cùng hàng */
+  align-items: center;                   /* căn giữa icon theo dọc */
+  justify-content: center;               /* căn giữa chữ theo ngang */
+  gap: 8px;                              /* khoảng giữa icon và chữ */
+  margin-bottom: 25px;                   /* cách phần bên dưới */
+}
+
+
+/* --- Nhóm ô nhập (icon + input) --- */
+.input-group {
+  position: relative;                    /* để icon nằm trong khung input */
+  margin-bottom: 15px;                   /* cách nhau giữa các ô */
+}
+
+.input-group i {
+  position: absolute;                    /* icon nằm trong ô */
+  top: 50%;                              /* canh giữa theo chiều dọc */
+  left: 12px;                            /* cách lề trái */
+  transform: translateY(-50%);           /* dịch icon chính giữa */
+  color: #00b14f;                        /* icon màu xanh lá */
+  font-size: 16px;                       /* kích thước icon */
+}
+
+.input-group .eye {
+  right: 12px;                           /* icon con mắt bên phải */
+  left: auto;                            /* bỏ canh trái */
+  color: #888;                           /* màu xám nhạt */
+  cursor: pointer;                       /* con trỏ bàn tay khi rê */
+}
+
+.input-group input {
+  width: 100%;                           /* input chiếm toàn khung */
+  padding: 10px 40px;                    /* chừa khoảng cho icon */
+  border: 1px solid #ccc;                /* viền xám nhạt */
+  border-radius: 6px;                    /* bo góc */
+  font-size: 14px;                       /* cỡ chữ */
+  box-sizing: border-box;                /* tính cả padding vào kích thước */
+}
+/* --- Link Quên mật khẩu --- */
+.forgot-password {
+  text-align: right;                     /* căn phải */
+  margin-bottom: 20px;                   /* cách dưới */
+}
+.forgot-password a {
+  color: #00b14f;                        /* màu xanh lá */
+  font-size: 13px;                       /* chữ nhỏ hơn */
+  text-decoration: none;                 /* bỏ gạch chân */
+}
+
+/* --- Nút Đăng nhập --- */
+.btn-login {
+  width: 100%;                           /* chiếm toàn chiều ngang */
+  background-color: #00b14f;             /* màu xanh chủ đạo */
+  color: #fff;                           /* chữ trắng */
+  padding: 12px;                         /* chiều cao nút */
+  border: none;                          /* bỏ viền */
+  border-radius: 6px;                    /* bo góc */
+  font-size: 16px;                       /* cỡ chữ */
+  cursor: pointer;                       /* con trỏ bàn tay */
+}
+
+/* --- Dòng Đăng ký ngay --- */
+.register-text 
+{
+  text-align: center;                    /* căn giữa chữ */
+  font-size: 14px;                       /* cỡ chữ nhỏ */
+  margin-top: 20px;                      /* cách trên */
+  color: #555;                           /* màu xám */
+}
+.register-text a 
+{
+  color: #00b14f;                        /* màu xanh cho link */
+  text-decoration: none;                 /* bỏ gạch chân */
+}
