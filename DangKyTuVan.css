@@ -1,0 +1,80 @@
+/* ===== Toàn trang ===== */
+body 
+{
+  font-family: Arial, sans-serif;     /* Chọn kiểu chữ cho toàn trang */
+  background: #fff;                   /* Màu nền trắng */
+  display: flex;                      /* Dùng Flexbox để canh vị trí */
+  justify-content: center;            /* Căn giữa nội dung theo chiều ngang */
+  align-items: flex-start;            /* Căn phần tử ở trên cùng (thay vì giữa dọc) */
+  min-height: 100vh;                  /* Chiều cao = toàn màn hình */
+  margin: 0;                          /* Xóa khoảng trắng mặc định */
+  padding: 40px 20px;                 /* Tạo khoảng cách lề */
+}
+
+/* ===== Khung ngoài của form ===== */
+.form-section 
+{
+  width: 100%;
+  max-width: 420px;                   /* Giới hạn chiều rộng tối đa */
+  background: #fff;                   /* Nền trắng */
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* Bóng mờ nhẹ xung quanh */
+  border-radius: 10px;                /* Bo tròn góc */
+  padding: 30px;                      /* Khoảng cách bên trong */
+  box-sizing: border-box;             /* Tính cả padding vào tổng kích thước */
+}
+
+/* ===== Tiêu đề và mô tả ===== */
+header h2 
+{
+  text-align: center;                 /* Căn giữa chữ */
+  font-size: 22px;                    /* Cỡ chữ lớn hơn */
+  margin: 0 0 6px;
+}
+
+header p 
+{
+  text-align: center;
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 24px;
+}
+.input-group 
+{
+  position: relative;                 /* Để đặt icon tuyệt đối trong ô */
+  margin-bottom: 18px;
+}
+.input-group i 
+{
+  position: absolute;                 /* Đặt icon nằm trong ô nhập */
+  left: 12px;                         /* Cách lề trái 12px */
+  top: 50%;                           /* Canh giữa theo chiều cao */
+  transform: translateY(-50%);        /* Dịch icon lên giữa thật sự */
+  color: #777;                        /* Màu xám nhẹ cho icon */
+  font-size: 15px;
+}
+/* ===== Ô nhập văn bản & danh sách chọn ===== */
+input,select 
+{
+  width: 100%;                        /* Chiều rộng full khung */
+  padding: 10px 12px 10px 36px;       /* Chừa chỗ bên trái cho icon */
+  font-size: 14px;
+  border: 1.5px solid #ddd;           /* Viền mảnh xám nhạt */
+  border-radius: 8px;                 /* Bo góc nhẹ */
+  outline: none;                      /* Bỏ viền xanh mặc định khi click */
+  box-sizing: border-box;
+  transition: border-color 0.2s;      /* Hiệu ứng đổi màu viền khi focus */
+  background-color: #fff;
+}
+/* ===== Nút gửi form ===== */
+.submit-btn {
+  width: 100%;
+  background: #6c40ff;                /* Màu nền tím */
+  color: #fff;                        /* Màu chữ trắng */
+  font-size: 15px;
+  font-weight: 600;
+  border: none;                       /* Bỏ viền */
+  border-radius: 8px;
+  padding: 12px;
+  cursor: pointer;                    /* Hiện con trỏ tay khi hover */
+  transition: background 0.2s;
+}
